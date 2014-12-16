@@ -1,0 +1,12 @@
+{
+    "name": "Cody/mp-csv",
+    "authors": [
+        {
+            "name": "Ionut Codreanu",
+            "email": "mp@mo.com"
+        }
+    ],
+    "require": {
+        "league/csv": "~6.2"
+    }
+}
