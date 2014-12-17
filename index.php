@@ -21,8 +21,8 @@ foreach ($data as $line_index => $row) {
     }
 }
 
-print_r($arrayData);
-
+//print_r($arrayData);
+//die();
 function parseActivity($activityWBS)
 {
     return explode('.', $activityWBS);
@@ -36,6 +36,7 @@ function addData($rowInfo)
     switch (count($activityInfo)) {
         case 1:
             $arrayData[$activityInfo[0]]["name"] = $rowInfo[1];
+            $arrayData[$activityInfo[0]]["total"] = 0;
             $startDate = new DateTime($rowInfo[2]);
             $endDate = new DateTime($rowInfo[3]);
             $arrayData[$activityInfo[0]]["start"] = $startDate->format("d.m.Y");
@@ -44,6 +45,8 @@ function addData($rowInfo)
 
         case 2:
             $arrayData[$activityInfo[0]][$activityInfo[1]]["name"] = $rowInfo[1];
+            $arrayData[$activityInfo[0]][$activityInfo[1]]["total"] = 0;
+            $arrayData[$activityInfo[0]]["total"]++;
             $startDate = new DateTime($rowInfo[2]);
             $endDate = new DateTime($rowInfo[3]);
             $arrayData[$activityInfo[0]][$activityInfo[1]]["start"] = $startDate->format("d.m.Y");
@@ -52,6 +55,9 @@ function addData($rowInfo)
             break;
         case 3:
             $arrayData[$activityInfo[0]][$activityInfo[1]][$activityInfo[2]]["name"] = $rowInfo[1];
+            $arrayData[$activityInfo[0]][$activityInfo[1]][$activityInfo[2]]["total"] = 0;
+            $arrayData[$activityInfo[0]]["total"]++;
+            $arrayData[$activityInfo[0]][$activityInfo[1]]["total"]++;
             $startDate = new DateTime($rowInfo[2]);
             $endDate = new DateTime($rowInfo[3]);
             $arrayData[$activityInfo[0]][$activityInfo[1]][$activityInfo[2]]["start"] = $startDate->format("d.m.Y");
@@ -60,6 +66,10 @@ function addData($rowInfo)
             break;
         case 4:
             $arrayData[$activityInfo[0]][$activityInfo[1]][$activityInfo[2]][$activityInfo[3]]["name"] = $rowInfo[1];
+            $arrayData[$activityInfo[0]][$activityInfo[1]][$activityInfo[2]][$activityInfo[3]]["total"] = 0;
+            $arrayData[$activityInfo[0]]["total"]++;
+            $arrayData[$activityInfo[0]][$activityInfo[1]]["total"]++;
+            $arrayData[$activityInfo[0]][$activityInfo[1]][$activityInfo[2]]["total"]++;
             $startDate = new DateTime($rowInfo[2]);
             $endDate = new DateTime($rowInfo[3]);
             $arrayData[$activityInfo[0]][$activityInfo[1]][$activityInfo[2]][$activityInfo[3]]["start"] = $startDate->format("d.m.Y");
@@ -68,6 +78,10 @@ function addData($rowInfo)
             break;
         case 5:
             $arrayData[$activityInfo[0]][$activityInfo[1]][$activityInfo[2]][$activityInfo[3]][$activityInfo[4]]["name"] = $rowInfo[1];
+            $arrayData[$activityInfo[0]]["total"]++;
+            $arrayData[$activityInfo[0]][$activityInfo[1]]["total"]++;
+            $arrayData[$activityInfo[0]][$activityInfo[1]][$activityInfo[2]]["total"]++;
+            $arrayData[$activityInfo[0]][$activityInfo[1]][$activityInfo[2]][$activityInfo[3]]["total"]++;
             $startDate = new DateTime($rowInfo[2]);
             $endDate = new DateTime($rowInfo[3]);
             $arrayData[$activityInfo[0]][$activityInfo[1]][$activityInfo[2]][$activityInfo[3]][$activityInfo[4]]["start"] = $startDate->format("d.m.Y");
@@ -76,3 +90,57 @@ function addData($rowInfo)
             break;
     }
 }
+
+function displayRow($row, $depth, $number = 0)
+{
+    global $arrayData;
+    printf("<tr>");
+    if ($depth == 1) {
+        printf("<td>%d</td>", $number);
+        printf("<td>%s</td>", $row['name']);
+
+    } else {
+        printf(
+            "<td>&nbsp;</td><td>&nbsp;</td>"
+        );
+    }
+    if ($depth == 2) {
+        printf("<td>%s</td>", $number . '. ' . $row['name']);
+    } else {
+        printf("<td>&nbsp;</td>");
+    }
+
+    if ($depth == 3) {
+        printf("<td>%s</td>", $number . '. ' . $row['name']);
+    } else {
+        printf("<td>&nbsp;</td>");
+    }
+
+    if ($depth == 4) {
+        printf("<td>%s</td>", $number . '. ' . $row['name']);
+    } else {
+        printf("<td>&nbsp;</td>");
+    }
+
+    if ($depth == 5) {
+        printf("<td>%s</td>", $number . '. ' . $row['name']);
+    } else {
+        printf("<td>&nbsp;</td>");
+    }
+
+
+    printf("<td>%s</td><td>%s</td></tr>", $row['start'], $row['end']);
+    $childs = count($row) - 4;
+    if ($childs > 0) {
+        for ($iterator = 1; $iterator <= $childs; $iterator++) {
+            if (is_array($row)) {
+                displayRow($row[$iterator], $depth + 1, $iterator);
+            }
+
+        }
+    }
+
+}
+
+
+require_once 'template.php';

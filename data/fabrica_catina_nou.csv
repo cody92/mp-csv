@@ -63,49 +63,49 @@ ID,Name,Start_Date,Finish_Date,WBS
 63,Alegerea mecanismelor de sortare a rezidurilor,10 March 2015 8:00,11 March 2015 17:00,1.4.2.1
 64,Alegerea mecanismelor de spalare a materiei prime,12 March 2015 8:00,13 March 2015 17:00,1.4.2.2
 65,Alegerea benzii de transport a materiei prime,16 March 2015 8:00,17 March 2015 17:00,1.4.2.3
-66,Alegerea solutiei optime pentru procesarea materiei prime,18 March 2015 8:00,25 March 2015 17:00,2.4.3
+66,Alegerea solutiei optime pentru procesarea materiei prime,18 March 2015 8:00,25 March 2015 17:00,1.4.3
 67,Alegerea unui storcator pentru obtinerea sucului,18 March 2015 8:00,19 March 2015 17:00,1.4.3.1
 68,Alegerea conductelor de transport a sucului catre depozit,20 March 2015 8:00,23 March 2015 17:00,1.4.3.2
 69,Alegerea benzilor de transport a rezidurilor catre depozit,24 March 2015 8:00,25 March 2015 17:00,1.4.3.3
-70,Alegerea solutiei optime pentru depozitarea sucului neimbuteliat,26 March 2015 8:00,06 April 2015 17:00,2.4.4
+70,Alegerea solutiei optime pentru depozitarea sucului neimbuteliat,26 March 2015 8:00,06 April 2015 17:00,1.4.4
 71,Alegerea pompelor pentru transportul sucului,26 March 2015 8:00,27 March 2015 17:00,1.4.4.1
 72,Alegerea tancurilor pentru depozitarea sucului,30 March 2015 8:00,31 March 2015 17:00,1.4.4.2
 73,Alegerea conductelor de transport,01 April 2015 8:00,02 April 2015 17:00,1.4.4.3
 74,Alegerea echipamentelor de control pentru pastrarea conditiilor optime de depozitare,03 April 2015 8:00,06 April 2015 17:00,1.4.4.4
-75,Alegerea solutiei optime pentru conservarea sucului,07 April 2015 8:00,10 April 2015 17:00,2.4.5
+75,Alegerea solutiei optime pentru conservarea sucului,07 April 2015 8:00,10 April 2015 17:00,1.4.5
 76,Alegerea recipientelor de fierbere a sucului in vederea obtinerii concentratului,07 April 2015 8:00,08 April 2015 17:00,1.4.5.1
 77,Alegerea tehnologiilor si metodelor de tratare in vederea conservarii,09 April 2015 8:00,10 April 2015 17:00,1.4.5.2
-78,Alegerea solutiei optime pentru imbutelierea sucului concentrat,13 April 2015 8:00,22 April 2015 17:00,2.4.6
+78,Alegerea solutiei optime pentru imbutelierea sucului concentrat,13 April 2015 8:00,22 April 2015 17:00,1.4.6
 79,Alegerea instalatiei pentru imbutelierea sucului,13 April 2015 8:00,14 April 2015 17:00,1.4.6.1
 80,Alegerea instalatiei pentru etichetarea sticlelor,15 April 2015 8:00,16 April 2015 17:00,1.4.6.2
 81,Alegerea recipientelor folosite,17 April 2015 8:00,20 April 2015 17:00,1.4.6.3
 82,Alegerea instalatiei pentru etichetarea sticlelor,21 April 2015 8:00,22 April 2015 17:00,1.4.6.4
-83,Alegerea solutiei optime pentru depozitarea rezidurilor obtinute in urma stoarcerii (seminte + coji),23 April 2015 8:00,28 April 2015 17:00,2.4.7
+83,Alegerea solutiei optime pentru depozitarea rezidurilor obtinute in urma stoarcerii (seminte + coji),23 April 2015 8:00,28 April 2015 17:00,1.4.7
 84,Alegerea modului de constructie a depozitului,23 April 2015 8:00,23 April 2015 17:00,1.4.7.1
 85,Alegerea mecanismelor de uscare,24 April 2015 8:00,24 April 2015 17:00,1.4.7.2
 86,Alegerea mecanismelor de mentinere a umiditatii optime (8-9%),27 April 2015 8:00,27 April 2015 17:00,1.4.7.3
 87,Alegerea mecanismelor de mentinere a temperaturii optime,28 April 2015 8:00,28 April 2015 17:00,1.4.7.4
-88,Alegerea solutiei optime pentru macinarea produselor uscate,29 April 2015 8:00,04 May 2015 17:00,2.4.8
+88,Alegerea solutiei optime pentru macinarea produselor uscate,29 April 2015 8:00,04 May 2015 17:00,1.4.8
 89,Alegerea mecanismelor de macinare,29 April 2015 8:00,30 April 2015 17:00,1.4.8.1
 90,Alegerea benzilor de transport a produsului macinat catre presa,01 May 2015 8:00,04 May 2015 17:00,1.4.8.2
-91,Alegerea solutiei optime pentru macinarea produselor uscate,05 May 2015 8:00,08 May 2015 17:00,2.4.9
+91,Alegerea solutiei optime pentru macinarea produselor uscate,05 May 2015 8:00,08 May 2015 17:00,1.4.9
 92,Alegerea presei pentru indeplinirea cerintelor tehnice,05 May 2015 8:00,06 May 2015 17:00,1.4.9.1
 93,Alegerea conductelor de transport catre tancurile de ulei,07 May 2015 8:00,08 May 2015 17:00,1.4.9.2
-94,Alegerea solutiei optime pentru depozitarea uleiului,11 May 2015 8:00,18 May 2015 17:00,2.4.10
+94,Alegerea solutiei optime pentru depozitarea uleiului,11 May 2015 8:00,18 May 2015 17:00,1.4.10
 95,Alegerea pompelor pentru transport ulei,11 May 2015 8:00,12 May 2015 17:00,1.4.10.1
 96,Alegerea tancurilor pentru depozitarea uleiului,13 May 2015 8:00,14 May 2015 17:00,1.4.10.2
 97,Alegerea mecanismelor de control pentru pastrarea conditiilor optime,15 May 2015 8:00,18 May 2015 17:00,1.4.10.3
-98,Alegerea solutiei optime pentru imbutelierea uleiului,19 May 2015 8:00,26 May 2015 17:00,2.4.11
+98,Alegerea solutiei optime pentru imbutelierea uleiului,19 May 2015 8:00,26 May 2015 17:00,1.4.11
 99,Alegerea recipientelor folosite,19 May 2015 8:00,20 May 2015 17:00,1.4.11.1
 100,Alegerea instalatiei pentru imbutelierea uleiului,21 May 2015 8:00,22 May 2015 17:00,1.4.11.2
 101,Alegerea instalatiei pentru etichetarea sticlelor,25 May 2015 8:00,26 May 2015 17:00,1.4.11.3
-102,Alegerea solutiei optime pentru depozitarea uleiului imbuteliat,27 May 2015 8:00,28 May 2015 17:00,2.4.12
+102,Alegerea solutiei optime pentru depozitarea uleiului imbuteliat,27 May 2015 8:00,28 May 2015 17:00,1.4.12
 103,Alegerea materialelor ce stau la baza constructiei depozitului de ulei imbuteliat,27 May 2015 8:00,28 May 2015 17:00,1.4.12.1
-104,Alegerea solutiei optime pentru depozitarea rezidurilor,29 May 2015 8:00,01 June 2015 17:00,2.4.13
+104,Alegerea solutiei optime pentru depozitarea rezidurilor,29 May 2015 8:00,01 June 2015 17:00,1.4.13
 105,Alegerea materialelor ce stau la baza constructiei depozitului de reziduri,29 May 2015 8:00,01 June 2015 17:00,1.4.13.1
-106,Alegerea solutiei optime pentru managementul calitatii,02 June 2015 8:00,03 June 2015 17:00,2.4.14
+106,Alegerea solutiei optime pentru managementul calitatii,02 June 2015 8:00,03 June 2015 17:00,1.4.14
 107,Alegerea instalatiilor ce au ca scop controlul calitatii produselor,02 June 2015 8:00,03 June 2015 17:00,1.4.14.1
-108,Alegerea solutiei optime pentru monitorizarea fabricii,04 June 2015 8:00,05 June 2015 17:00,2.4.15
+108,Alegerea solutiei optime pentru monitorizarea fabricii,04 June 2015 8:00,05 June 2015 17:00,1.4.15
 109,Alegerea instalatiilor ce au ca scop monitorizarea proceselor,04 June 2015 8:00,05 June 2015 17:00,1.4.15.1
 110,Selectarea firmei responsabile pentru construirea cladirii,08 June 2015 8:00,12 June 2015 17:00,1.5
 111,Selectarea firmei responsabile pentru realizarea liniei de productie,15 June 2015 8:00,19 June 2015 17:00,1.6
